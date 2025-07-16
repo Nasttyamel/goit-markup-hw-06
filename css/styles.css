@@ -690,3 +690,140 @@ address {
   }
 }
 /*Footer start*/
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer {
+  background: #2e2f42;
+  padding: 96px 0;
+}
+.footer-logo {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #4d5ae5;
+  margin-bottom: 16px;
+}
+.footer-logo-studio {
+  color: #f4f4fd;
+}
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  max-width: 288px;
+}
+.footer-conteiner-logo {
+  margin-bottom: 72px;
+  padding: 0;
+}
+
+.footer-link-text {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.icons-list-footer {
+  display: flex;
+  gap: 16px;
+}
+.footer-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+.footer-subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-subscribe-inter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 288px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding: 8px 16px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.placeholder {
+  color: #ffffff;
+}
+.footer-button {
+  border-radius: 4px;
+  padding: 8px 24px;
+  height: 40px;
+  background-color: #4d5ae5;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-width: 165px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+}
+.footer-svg {
+  fill: #fff;
+  margin-left: 16px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .footer-conteiner-logo {
+    flex-direction: column;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .footer-link {
+    flex-direction: column;
+    margin-bottom: 104px;
+  }
+  .footer-link-text {
+    text-align: left;
+  }
+  .footer-subscribe {
+    flex-direction: column;
+  }
+  .footer-input {
+    width: 264px;
+  }
+  .footer-button {
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .footer {
+    height: 312px;
+    padding: 100px 0;
+  }
+}
