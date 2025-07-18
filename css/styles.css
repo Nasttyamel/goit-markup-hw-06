@@ -245,6 +245,9 @@ address {
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
+.mobile-nav-list .current {
+  color: #404bbf;
+}
 .mobile-nav-list-item:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -258,12 +261,16 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   padding: 0;
+  font-style: normal;
 }
 .mobile-address-list {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 24px;
+}
+.mobile-address-list .current {
+  color: #404bbf;
 }
 
 @media screen and (min-width: 768px) {
@@ -317,7 +324,7 @@ address {
   background-repeat: no-repeat;
   color: white;
   padding: 72px 0;
-  margin: 0 auto 96px;
+  margin: 0 auto;
 }
 @media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
   .hero-baner {
@@ -388,7 +395,6 @@ address {
   .hero-baner {
     max-width: 1440px;
     padding: 188px 0;
-    margin-bottom: 120px;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
@@ -419,7 +425,8 @@ address {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-  margin-bottom: 96px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .icons {
   display: none;
@@ -446,11 +453,10 @@ address {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 24px;
+    gap: 72px 24px;
   }
   .advantages-list-item {
     width: calc((100% - 24px) / 2);
-    margin-bottom: 72px;
   }
   .advantages-list-item-title {
     text-align: left;
@@ -458,6 +464,7 @@ address {
 }
 @media screen and (min-width: 1158px) {
   .advantages-list {
+    padding: 120px 0;
     gap: 24px;
   }
   .advantages-list-item {
@@ -486,7 +493,7 @@ address {
 /*Section team start*/
 .team {
   background-color: #f4f4fd;
-  margin-bottom: 96px;
+  padding: 96px 0;
 }
 .team-title {
   font-weight: 700;
@@ -496,7 +503,6 @@ address {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-top: 96px;
   margin: 0 auto 72px;
 }
 .team-list {
@@ -505,9 +511,8 @@ address {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 72px;
+  gap: 72px 24px;
   margin: 0 auto;
-  padding-bottom: 96px;
 }
 .team-list-item {
   background-color: #ffffff;
@@ -564,13 +569,13 @@ address {
 }
 @media screen and (min-width: 1158px) {
   .team {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
+    padding-top: 120px;
   }
   .team-list {
     flex-direction: row;
     gap: 24px;
     margin: 0 auto;
-    padding-bottom: 120px;
   }
   .team-list-item {
     width: calc((100% - 72px) / 4);
@@ -594,6 +599,7 @@ address {
   text-transform: capitalize;
   color: #2e2f42;
   margin-bottom: 72px;
+  padding-top: 96px;
 }
 .portfolio-list {
   display: flex;
@@ -634,7 +640,7 @@ address {
 
 @media screen and (min-width: 768px) {
   .portfolio-list {
-    column-gap: 24px;
+    gap: 72px 24px;
   }
   .portfolio-list-item {
     width: calc((100% - 24px) / 2);
@@ -707,6 +713,7 @@ address {
   align-items: center;
   margin-bottom: 16px;
   color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
 }
 .footer-logo-studio {
   color: #f4f4fd;
